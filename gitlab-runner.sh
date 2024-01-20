@@ -27,6 +27,7 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 sudo usermod -aG docker ubuntu
+sudo usermod -aG docker gitlab-runner
 
 # Install Node.js
 curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash - &&\
